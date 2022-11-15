@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .red{
+            color:red;
+        }
+    </style>
+    <!-- to use Vue add this to the top of the body tag. This connects HTML and JS to the VUEJS Framework -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+    <input type="text" id="myText" onKeyUp="changeHeader()">
+    <h1 id="myHeader"></h1>
+
+    <div id="AppName">
+        <!-- Code connected to vue goes here -->
+        <h1>{{test}}</h1>
+        <input type="text" v-model="test">
+
+        <!-- Advanced Vue -->
+        <!-- <Button v-if="!show" v-on:Click="show=true">Show text</Button>
+        <Button v-if="show" v-on:Click="show=false">Hide Text</Button>
+        <p v-if="show">This is some secret text!</p> -->
+
+        <!-- <button v-on:Click="addText()">Save Text</button>
+        <ul>
+            <li v-bind:class="{ 'red': text=='red' }" v-for="text in textList">{{text}}</li>
+        </ul> -->
+
+       
+    </div>
+    
+   <!-- Add this to the bottom of the body tag. This connects HTML to the JS -->
+   <script src="code.js"></script>
+</body>
+</html>
